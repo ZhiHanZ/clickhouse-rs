@@ -144,6 +144,7 @@ mod retry_guard;
 /// Clickhouse types.
 pub mod types;
 
+extern crate cityhash_rs;
 /// This macro is a convenient way to pass row into a block.
 ///
 /// ```rust

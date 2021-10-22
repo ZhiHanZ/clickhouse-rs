@@ -33,7 +33,7 @@ pin-project = "1.0.4"
 url="^2"
 uuid = "0.8.1"
 combine = "4.2.3"
-
+cityhash-rs = "1.0"
 [dependencies.futures-util]
 version = "0.3.12"
 features = ["sink"]
@@ -47,9 +47,6 @@ optional = true
 [dependencies.async-std]
 version = "1.6"
 optional = true
-
-[dependencies.clickhouse-rs-cityhash-sys]
-version = "0.1.2"
 
 [dependencies.log]
 version = "0.4.8"

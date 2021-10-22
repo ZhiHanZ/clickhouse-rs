@@ -1456,3 +1456,9 @@ async fn test_simple_agg_func() -> Result<(), Error> {
     Ok(())
 }
 
+#[test]
+fn test_city_hash_128() {
+    let expected = 0x900ff195577748fe13a9176355b20d7eu128;
+    let actual = cityhash_rs::cityhash_102_128("abc".as_bytes());
+    assert_eq!(expected, actual)
+}
